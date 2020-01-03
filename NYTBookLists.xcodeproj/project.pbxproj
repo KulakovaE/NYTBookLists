@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		F3E09D7923BF5097003F41E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E09D7823BF5097003F41E1 /* AppDelegate.swift */; };
 		F3E09D7B23BF5097003F41E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E09D7A23BF5097003F41E1 /* SceneDelegate.swift */; };
-		F3E09D7D23BF5097003F41E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E09D7C23BF5097003F41E1 /* ViewController.swift */; };
 		F3E09D8023BF5097003F41E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E09D7E23BF5097003F41E1 /* Main.storyboard */; };
 		F3E09D8223BF5099003F41E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E09D8123BF5099003F41E1 /* Assets.xcassets */; };
 		F3E09D8523BF5099003F41E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E09D8323BF5099003F41E1 /* LaunchScreen.storyboard */; };
+		F3E09D9223BF564E003F41E1 /* OverviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E09D9123BF564E003F41E1 /* OverviewResponse.swift */; };
+		F3E09D9423BF5963003F41E1 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E09D9323BF5963003F41E1 /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3E09D7523BF5097003F41E1 /* NYTBookLists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTBookLists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E09D7823BF5097003F41E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E09D7A23BF5097003F41E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3E09D7C23BF5097003F41E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3E09D7F23BF5097003F41E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3E09D8123BF5099003F41E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E09D8423BF5099003F41E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3E09D8623BF5099003F41E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E09D9123BF564E003F41E1 /* OverviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewResponse.swift; sourceTree = "<group>"; };
+		F3E09D9323BF5963003F41E1 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		F3E09D8D23BF50D9003F41E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F3E09D9123BF564E003F41E1 /* OverviewResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,7 +98,6 @@
 		F3E09D8F23BF50E6003F41E1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F3E09D7C23BF5097003F41E1 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +105,7 @@
 		F3E09D9023BF50F2003F41E1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F3E09D9323BF5963003F41E1 /* NetworkClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -178,9 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E09D7D23BF5097003F41E1 /* ViewController.swift in Sources */,
+				F3E09D9423BF5963003F41E1 /* NetworkClient.swift in Sources */,
 				F3E09D7923BF5097003F41E1 /* AppDelegate.swift in Sources */,
 				F3E09D7B23BF5097003F41E1 /* SceneDelegate.swift in Sources */,
+				F3E09D9223BF564E003F41E1 /* OverviewResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
